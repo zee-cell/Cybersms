@@ -115,7 +115,7 @@ echo -e "\e[1;32m Update If Doesn't Work.\e[0m"
 echo  " "
 echo -e "\e[4;31m That's All !!!\e[0m"
 echo -e "\e[1;34m For Any Queries Mail Us!!!\e[0m"
-echo -e "\e[1;32m        Mail: HACK3RY2J@gmail.com \e[0m"
+echo -e "\e[1;32m        Mail: \e[0m"
 echo -e "\e[1;32m   Instagram: https://I/ \e[0m"
 echo -e "\e[4;32mYouTube Page: https://www.youtube.com/c \e[0m"
 echo "Press Enter To Return To Main Menu"
@@ -124,7 +124,7 @@ clear
 elif [ $ch -eq 5 ];then
 clear
 echo -e "\e[1;31m"
-figlet -f slant Anon-SMS | lolcat
+figlet -f slant Cybersms | lolcat
 echo -e "\e[1;34m Created By \e[1;32m"
 toilet -f pagga -F border Coding family | lolcat
 echo -e "\e[1;34m For Any Queries Mail Us!!!\e[0m"
