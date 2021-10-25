@@ -74,7 +74,7 @@ def Track() :
 def update():
     stuff_to_update = ['send.py', 'Run.sh', '.version']
     for fl in stuff_to_update:
-        dat = urllib.request.urlopen("https://raw.githubusercontent.com/dan998/Cybersms/main/Update.Cybersms/master/" + fl).read()
+        dat = urllib.request.urlopen("https://raw.githubusercontent.com/dan998/Cybersms/main/Update.Cybersms/" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
