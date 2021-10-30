@@ -71,49 +71,6 @@ def Track() :
   print("We love you continue to support our team.\nThank you for your support...")
   exit()
 
-def update():
-    stuff_to_update = ['send.py', 'Run.sh', '.version']
-    for fl in stuff_to_update:
-        dat = urllib.request.urlopen("https://raw.githubusercontent.com/dan998/Cybersms/master/" + fl).read()
-        file = open(fl, 'wb')
-        file.write(dat)
-        file.close()
-    print('\n\t\tUpdated Successfull !!!!')
-    print('\tRun The Script Again...')
-    exit()
-
-clr()
-banner()
-try:
-    urllib.request.urlopen('https://www.google.com')
-except Exception:
-    print("Error While Connecting To Internet!!!")
-    print("\tPlease Connect To Internet To Continue...\n")
-    input('Exiting....\n Press Enter To Exit....')
-    exit()
-print('\tChecking For Updates...')
-ver = urllib.request.urlopen("https://github.com/dan998/Cybersms/blob/main/.version").read().decode('utf-8')
-verl = ''
-try:
-    verl = open(".version", 'r').read()
-except Exception:
-    pass
-if ver != verl:
-    print('\n\t\tAn Update is Available....')
-    print('\tUpdating Cybersms...')
-    update()
-print("Congratulation")
-print("Your Version is Up-To-Date")
-print('\n\tStarting Cybersms...\n')
-try:
-    noti = urllib.request.urlopen("https://raw.githubusercontent.com/dan998/Cybersms/main/.notify").read().decode('utf-8')
-    if len(noti) > 10:
-        print('\nNotification : ' + noti + '\n')
-except Exception:
-    pass
-    
-    
-    
 while True:
 	print("\033[0mThis Tool Is Used To Send Cyber Anonymous Messages")
 	break
